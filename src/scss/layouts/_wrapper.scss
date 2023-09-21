@@ -1,0 +1,13 @@
+.content {
+  height: 80vh;
+  margin: 0 5rem;
+  border: 0.5px solid rgba(255,255,255,0.203);
+  border-top: none;
+  border-bottom: none;
+}
+
+@media (max-width: 480px)   {
+  .content  {
+    margin: 0 !important;
+  }
+}
