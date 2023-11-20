@@ -1,0 +1,25 @@
+import { FC } from "react"
+import { IPokemonDetails } from "../utils/Types"
+import img from "../assets/pokemons/default/1.png"
+
+interface PokemonCardProps {
+    pokemon: IPokemonDetails;
+  }
+
+export const PokemonCard: FC<PokemonCardProps> = ({pokemon}) => {
+    const defaultImage = require("../"+ pokemon.images?.default);
+    const shinyImage = require("../"+ pokemon.images?.shiny);
+
+    return (
+        <div className="pokemon-card">
+            <div className="add-to-list"></div>
+            <div className="add-to-compare"></div>
+            <h3 className="pokemon-card-title">{pokemon.name}</h3>
+            <div className="pokemon-card-image">
+                <img alt={pokemon.name} 
+                src={shinyImage? shinyImage : defaultImage} />
+            </div>
+
+        </div>
+    )
+}

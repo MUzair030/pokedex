@@ -69,8 +69,8 @@
       //margin: 0 20rem;
       width: 50%;
       display: grid;
-      //grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr ) );
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      // grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr ) );
     }
 
     .underline  {
@@ -81,6 +81,16 @@
       margin-left: 0.5rem;
       margin-right: 0.5rem;
       background: greenyellow;
+    }
+
+    .underline-trans {
+      position: relative;
+      height: 4px;
+      width: 100%;
+      transition: 0.5s ease-in-out;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      // background: red;
     }
   }
 }
@@ -120,10 +130,18 @@
   ul{
     width: 70% !important;
   }
+
+  .menu-underline-row {
+    width: 70% !important;
+  }
 }
 
 @media (max-width: 800px) {
   ul{
+    width: 80% !important;
+  }
+
+  .menu-underline-row {
     width: 80% !important;
   }
 }

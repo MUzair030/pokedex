@@ -32,6 +32,7 @@ export const Navbar = () => {
     const [tab, setTab] = useState<any>("pokemon")
 
     useEffect(()=>{
+        // eslint-disable-next-line no-restricted-globals
         const path = location.pathname.split("/")[1]
         console.log(path)
         setTab(path)
@@ -40,7 +41,7 @@ export const Navbar = () => {
     return(
         <nav className="nav">
             <div className="block">
-                <img src={pokeballIcon} />
+                <img alt="pokeball_icon" src={pokeballIcon} />
             </div>
 
             <div className="nav-pokedex-text">
@@ -48,10 +49,10 @@ export const Navbar = () => {
             </div>
 
             <div className="nav-menu">
-                <ul className="ual">
+                <ul className="ul">
                     {
                         navRoutes.map(({name, route}, index)=>(
-                            <Link to={route} onClick={()=>{
+                            <Link to={route} id={name} onClick={()=>{
                                 console.log(name)
                                 setTab(route.split("/")[1])
                             }}>
@@ -64,11 +65,11 @@ export const Navbar = () => {
                 </ul>
 
                 <div className="menu-underline-row">
-                    <div className={tab === "search"? "underline": ""}></div>
-                    <div className={tab === "compare"? "underline": ""}></div>
-                    <div className={tab === "pokemon"? "underline": ""}></div>
-                    <div className={tab === "list"? "underline": ""}></div>
-                    <div className={tab === "about"? "underline": ""}></div>
+                    <div className={tab === "search"? "underline": "underline-trans"}></div>
+                    <div className={tab === "compare"? "underline": "underline-trans"}></div>
+                    <div className={tab === "pokemon"? "underline": "underline-trans"}></div>
+                    <div className={tab === "list"? "underline": "underline-trans"}></div>
+                    <div className={tab === "about"? "underline": "underline-trans"}></div>
                 </div>
 
             </div>
