@@ -16,6 +16,7 @@ import psychic from "../assets/types/psychic.svg";
 import rock from "../assets/types/rock.svg";
 import steel from "../assets/types/steel.svg";
 import water from "../assets/types/water.svg";
+import { IPokemonTypesDetails } from "./Types";
 
 const Bug = "bug";
 const Dark = "dark";
@@ -38,6 +39,7 @@ const Water = "water";
 
 export const pokemonTypesDetails:any = {
   bug: {
+    name: "bug",
     image: bug,
     strength: [Grass, Psychic, Dark],
     weakness: [Fighting, Flying, Poison, Ghost, Steel, Fire, Fairy],
@@ -45,6 +47,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Flying, Rock, Fire],
   },
   dark: {
+    name: "dark",
     image: dark,
     strength: [Ghost, Psychic],
     weakness: [Fighting, Dark, Fairy],
@@ -52,6 +55,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Fighting, Bug, Fairy],
   },
   dragon: {
+    name: "dragon",
     image: dragon,
     strength: [Dragon],
     weakness: [Steel, Fairy],
@@ -59,6 +63,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Ice, Dragon, Fairy],
   },
   electric: {
+    name: "electric",
     image: electric,
     strength: [Flying, Water],
     weakness: [Ground, Grass, Electric, Dragon],
@@ -66,6 +71,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Ground],
   },
   fairy: {
+    name: "fairy",
     image: fairy,
     strength: [Fighting, Dragon, Dark],
     weakness: [Poison, Steel, Fire],
@@ -73,6 +79,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Poison, Steel],
   },
   fighting: {
+    name: "fighting",
     image: fighting,
     strength: [Normal, Rock, Steel, Ice, Dark],
     weakness: [Flying, Poison, Psychic, Bug, Ghost, Fairy],
@@ -80,6 +87,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Flying, Psychic, Fairy],
   },
   fire: {
+    name: "fire",
     image: fire,
     strength: [Bug, Steel, Grass, Ice],
     weakness: [Rock, Fire, Water, Dragon],
@@ -87,6 +95,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Ground, Rock, Water],
   },
   flying: {
+    name: "flying",
     image: flying,
     strength: [Fighting, Bug, Grass],
     weakness: [Rock, Steel, Electric],
@@ -94,6 +103,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Rock, Electric, Ice],
   },
   ghost: {
+    name: "ghost",
     image: ghost,
     strength: [Ghost, Psychic],
     weakness: [Normal, Dark],
@@ -101,6 +111,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Ghost, Dark],
   },
   grass: {
+    name: "grass",
     image: grass,
     strength: [Ground, Rock, Water],
     weakness: [Flying, Poison, Bug, Steel, Fire, Grass, Dragon],
@@ -108,6 +119,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Flying, Poison, Bug, Fire, Ice],
   },
   ground: {
+    name: "ground",
     image: ground,
     strength: [Poison, Rock, Steel, Fire, Electric],
     weakness: [Flying, Bug, Grass],
@@ -115,6 +127,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Water, Grass, Ice],
   },
   ice: {
+    name: "ice",
     image: ice,
     strength: [Flying, Ground, Grass, Dragon],
     weakness: [Steel, Fire, Water, Ice],
@@ -122,6 +135,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Fighting, Rock, Steel, Fire],
   },
   normal: {
+    name: "normal",
     image: normal,
     strength: [],
     weakness: [Rock, Ghost, Steel],
@@ -129,6 +143,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Fighting],
   },
   poison: {
+    name: "poison",
     image: poison,
     strength: [Grass, Fairy],
     weakness: [Poison, Ground, Rock, Ghost, Steel],
@@ -136,6 +151,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Ground, Psychic],
   },
   psychic: {
+    name: "psychic",
     image: psychic,
     strength: [Fighting, Poison],
     weakness: [Steel, Psychic, Dark],
@@ -143,6 +159,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Bug, Ghost, Dark],
   },
   rock: {
+    name: "rock",
     image: rock,
     strength: [Flying, Bug, Fire, Ice],
     weakness: [Fighting, Ground, Steel],
@@ -150,6 +167,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Fighting, Ground, Steel, Water, Grass],
   },
   steel: {
+    name: "steel",
     image: steel,
     strength: [Rock, Ice, Fairy],
     weakness: [Steel, Fire, Water, Electric],
@@ -169,6 +187,7 @@ export const pokemonTypesDetails:any = {
     vulnerable: [Fighting, Ground, Fire],
   },
   water: {
+    name: "water",
     image: water,
     strength: [Ground, Rock, Fire],
     weakness: [Water, Grass, Dragon],

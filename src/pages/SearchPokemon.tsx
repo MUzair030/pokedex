@@ -18,8 +18,8 @@ const SearchPokemon = () => {
     },[dispatch, pokemonList]);
 
     useEffect(()=>{
-        if(pokemonWithDetails === undefined || pokemonWithDetails.length === 0){
-            const smallList:IBasePokemonData[] = pokemonList? pokemonList.slice(0,25) : [];
+        if(pokemonWithDetails == undefined || pokemonWithDetails.length == 0){
+            const smallList:IBasePokemonData[] = pokemonList? pokemonList.slice(parseInt((Math.random()*10).toString()),25) : [];
             dispatch(getPokemonDetails(smallList))
         }
     },[pokemonList, dispatch])

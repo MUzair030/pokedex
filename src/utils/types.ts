@@ -31,7 +31,24 @@ export interface IPokemonInitState {
     detailsLoading: boolean
 }
 
-export interface IPokemonTypesDetails {}
+export interface IPokemonTypesDetails {
+    // [name: string] : IPokemonTypeDetails
+    name: string,
+    image: string,
+    resistance: string[],
+    strength: string[],
+    vulnerable: string[],
+    weakness: string[]
+    
+}
+
+// export interface IPokemonTypeDetails {
+//         image: string,
+//         resistance: string[],
+//         strength: string[],
+//         vulnerable: string[],
+//         weakness: string[]
+// }
 
 export interface IPokemonImage {
     default: string,
